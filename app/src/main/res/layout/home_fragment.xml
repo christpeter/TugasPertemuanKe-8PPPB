@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvHomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Homepage"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back, <Username>!"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:paddingBottom="24dp"/>
+
+    <!-- Image (Placeholder for an Avatar) -->
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_avatar_placeholder"
+        android:layout_gravity="center"
+        android:contentDescription="User Avatar"/>
+
+    <!-- How Are You Doing Today Text -->
+    <TextView
+        android:id="@+id/tvHowAreYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are you doing today?"
+        android:layout_marginTop="32dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+
+    <!-- Button Group -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <!-- Sad Button -->
+        <Button
+            android:id="@+id/btnSad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😞"
+            android:backgroundTint="@color/red"/>
+
+        <!-- Happy Button -->
+        <Button
+            android:id="@+id/btnHappy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="😊"
+            android:backgroundTint="@color/green"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+</LinearLayout>
